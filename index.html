@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>navigation</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+
+  </head>
+  <body>
+
+
+
+    <nav>
+      <div class="toggle">
+        <i class="fa fa-bars tab" aria-hidden="true"></i>
+
+      </div>
+        <div class="menu">
+        <ul>
+             <li><a href="#">Location</a>    <i class="fa fa-map-marker tab" aria-hidden="true"></i>
+
+
+            <ul class="submenu">
+              <li><a href="#">Darwin</a></li>
+              <li><a href="#">Palmerston</a></li>
+              <li><a href="#">Kathrine</a></li>
+            </ul>
+            </li>
+            <li><a href="#">About</a>      <i class="fa fa-th-list" aria-hidden="true"></i>
+            <ul class="submenu">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Team</a></li>
+
+            </ul>
+            </li>
+            <li><a href="#">Media</a>       <i class="fa fa-file-image-o" aria-hidden="true"></i>
+            <ul class="submenu">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Photo Gallery</a></li>
+              <li><a href="#">Report</a></li>
+            </ul>
+            </li>
+        </ul>
+
+    </div>
+    </nav>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.tab').click(function(){
+          $('ul').toggleClass('active');
+          })
+    })
+    </script>
+  </body>
+</html>

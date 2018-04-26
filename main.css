@@ -1,0 +1,98 @@
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+ul{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+ ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+
+
+
+}
+
+ul li a{
+  text-decoration: none;
+
+
+}
+
+.menu {
+  background: orange;
+
+}
+
+.submenu{
+  position: absolute;
+  background: red;
+  padding: 5px 10px;
+
+
+}
+.menu .submenu{
+  display: none;
+}
+
+.toggle{
+  width: 100%;
+  padding: 5px 10px;
+  background: yellow;
+  
+  box-sizing: border-box;
+  display: none;
+  }
+
+
+.menu > ul > li:hover > ul.submenu{
+  display: block;
+  margin-top: 5px;
+  margin-left: -5px
+
+
+
+
+
+}
+.menu > ul > li:hover{
+  background-color: blue;
+}
+
+
+
+
+
+@media (max-width:768px)
+{
+
+  .toggle{
+    display: block;
+  }
+
+  ul{
+    width: 100%;
+    display: none;
+
+  }
+
+  ul li {
+    display: block;
+    text-align: center;
+  }
+
+}
+
+
+.active{
+  display: block;
+}
